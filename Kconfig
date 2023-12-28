@@ -1,6 +1,6 @@
 menu "AXI DMAC"
 
-config AXI_DMAC_DRIVER
+config IIO_AXI_DMAC
         tristate "ADI AXI DMAC driver"
         select IIO_BUFFER
         select IIO_BUFFER_DMA
