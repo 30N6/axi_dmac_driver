@@ -1,7 +1,7 @@
 /*
  * ADI AXI DMAC IIO Client Module
  *
- * Copyright 2015 Edward Kigwana.
+ * Copyright 2023 30N6
  *
  * Licensed under the GPL-2.
  *
@@ -154,7 +154,7 @@ static int dma_probe(struct platform_device *pdev)
 	}
 
 	st = iio_priv(indio_dev);
-	mem = platform_get_resource(pdev, IORESOURCE_MEM, 0);
+	mem = platform_get_resource(pdev, IORESOURCE_MEM, 0); //TODO: do something with mem?
 
 	platform_set_drvdata(pdev, indio_dev);
 
